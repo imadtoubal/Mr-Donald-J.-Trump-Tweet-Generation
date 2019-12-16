@@ -3,7 +3,6 @@
 
 import numpy as np
 import pandas as pd
-from __future__ import print_function
 import sys
 import io
 import random
@@ -30,10 +29,9 @@ nltk.download('punkt')
 
 
 # load ascii text and covert to lowercase
-filename = "all_djt_tweets.csv"
+filename = "dataset/all_djt_tweets.csv"
 df = pd.read_csv(filename, header=0)
 df['text']
-
 
 
 """Since this data is generated from YouTube subtitles, we would want to get rid of things like special characters
@@ -152,7 +150,8 @@ print('Build model...')
 model = Sequential()
 # model.add(CuDNNLSTM(128, return_sequences=True, input_shape=(seqlen, embdim)))
 # model.add(Dropout(0.2))
-model.add(CuDNNLSTM(250))
+# please use CuDNNLSTM if you're using GPU
+model.add(LSTM(250))
 model.add(Dropout(0.2))
 model.add(Dense(250, activation='relu'))
 model.add(Dense(embdim, activation='linear'))
