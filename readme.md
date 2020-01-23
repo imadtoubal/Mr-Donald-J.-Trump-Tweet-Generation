@@ -1,8 +1,7 @@
 # Mr. Donald J. Trump Tweet Generation with LSTMs
 
-Character level: [![Open Word-Level In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/imadtoubal/Mr-Donald-J.-Trump-Tweet-Generation/blob/master/word_level_text_generation.ipynb)
-
-Word level: [![Open Character-Level In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/imadtoubal/Mr-Donald-J.-Trump-Tweet-Generation/blob/master/character_level_text_generation.ipynb)
+* [![Open Word-Level In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/imadtoubal/Mr-Donald-J.-Trump-Tweet-Generation/blob/master/word_level_text_generation.ipynb): Character level
+* [![Open Character-Level In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/imadtoubal/Mr-Donald-J.-Trump-Tweet-Generation/blob/master/character_level_text_generation.ipynb): Word level
 
 
 Text generation is a popular problem in natural language processing with machine learning. It ranges from simple email replies, word suggestions to simulating DNA sequences, and unfortunately fake news. This project aims to implement a generative model to learn the speech style of Mr. Donald Trump based on a dataset of his speeches; and then, automatically generate an unlimited amount of new speeches in the vein of Trump´s previous speeches.
